@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sma.mapper.SysUserMapper">
+ 	<select id="getAllSysUsers" resultType="com.sma.entity.SysUser">
+		select * from sys_user
+	</select>
+	
+ 	<select id="getLikeNameTest" parameterType="java.lang.String" resultType="com.sma.entity.SysUser">
+		select * 
+		from sys_user 
+		<where>
+			<if test="_parameter != null and _parameter != ''">
+				name like CONCAT('%',#{likeName},'%');
+			</if>
+		</where> 
+	</select>
+	
+	<select id="getLikeName" parameterType="java.lang.String" resultType="com.sma.entity.SysUser">
+		select * from sys_user where name like #{likeName}; 
+	</select>
+	
+	<select id="getById" parameterType="java.lang.Long" resultType="com.sma.entity.SysUser">
+		select * from sys_user where id=#{id};
+	</select>
+	
+	<select id="getLoginNameById" parameterType="java.lang.Long" resultType="java.lang.String">
+		select login_name from sys_user where id=#{id};
+	</select>	
+</mapper>

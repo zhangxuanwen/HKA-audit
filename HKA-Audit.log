@@ -1,0 +1,60 @@
+2017-11-20 11:36:40.636  INFO 7756 --- [main] com.sma.P_SMA_Application                : Starting P_SMA_Application on PC201603011254 with PID 7756 (E:\workspace\HKA-Audit\target\classes started by Administrator in E:\workspace\HKA-Audit)
+2017-11-20 11:36:40.636  INFO 7756 --- [main] com.sma.P_SMA_Application                : No active profile set, falling back to default profiles: default
+2017-11-20 11:36:40.698  INFO 7756 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30ab0028: startup date [Mon Nov 20 11:36:40 CST 2017]; root of context hierarchy
+2017-11-20 11:36:41.338  INFO 7756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-20 11:36:42.164  INFO 7756 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-11-20 11:36:42.180  INFO 7756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-20 11:36:42.180  INFO 7756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-20 11:36:42.289  INFO 7756 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-20 11:36:42.289  INFO 7756 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1591 ms
+2017-11-20 11:36:42.445  INFO 7756 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-20 11:36:42.445  INFO 7756 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-20 11:36:42.445  INFO 7756 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-20 11:36:42.445  INFO 7756 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-20 11:36:42.445  INFO 7756 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-20 11:36:43.256  INFO 7756 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30ab0028: startup date [Mon Nov 20 11:36:40 CST 2017]; root of context hierarchy
+2017-11-20 11:36:43.334  INFO 7756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.sma.P_SMA_Application.Hello()
+2017-11-20 11:36:43.334  INFO 7756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allSysUser]}" onto public java.util.List<com.sma.entity.SysUser> com.sma.controller.SysUserController.getAllSysUsers()
+2017-11-20 11:36:43.334  INFO 7756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLoginNameById]}" onto public java.lang.String com.sma.controller.SysUserController.getLoginNameById(long)
+2017-11-20 11:36:43.334  INFO 7756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/likeName]}" onto public java.util.List<com.sma.entity.SysUser> com.sma.controller.SysUserController.getLikeName(java.lang.String)
+2017-11-20 11:36:43.334  INFO 7756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getById]}" onto public com.sma.entity.SysUser com.sma.controller.SysUserController.getById(long)
+2017-11-20 11:36:43.350  INFO 7756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-20 11:36:43.350  INFO 7756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-20 11:36:43.381  INFO 7756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-20 11:36:43.381  INFO 7756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-20 11:36:43.475  INFO 7756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-20 11:36:44.021  INFO 7756 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-20 11:36:44.146  INFO 7756 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-11-20 11:36:44.146  INFO 7756 --- [main] com.sma.P_SMA_Application                : Started P_SMA_Application in 4.026 seconds (JVM running for 4.447)
+2017-11-20 11:37:21.961  INFO 7952 --- [main] com.sma.P_SMA_Application                : Starting P_SMA_Application on PC201603011254 with PID 7952 (E:\workspace\HKA-Audit\target\classes started by Administrator in E:\workspace\HKA-Audit)
+2017-11-20 11:37:21.992  INFO 7952 --- [main] com.sma.P_SMA_Application                : No active profile set, falling back to default profiles: default
+2017-11-20 11:37:22.039  INFO 7952 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54a72445: startup date [Mon Nov 20 11:37:22 CST 2017]; root of context hierarchy
+2017-11-20 11:37:22.679  INFO 7952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-11-20 11:37:23.490  INFO 7952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-11-20 11:37:23.505  INFO 7952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-11-20 11:37:23.505  INFO 7952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-20 11:37:23.615  INFO 7952 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-11-20 11:37:23.615  INFO 7952 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1576 ms
+2017-11-20 11:37:23.755  INFO 7952 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-20 11:37:23.755  INFO 7952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-20 11:37:23.755  INFO 7952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-20 11:37:23.755  INFO 7952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-20 11:37:23.755  INFO 7952 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-20 11:37:24.551  INFO 7952 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54a72445: startup date [Mon Nov 20 11:37:22 CST 2017]; root of context hierarchy
+2017-11-20 11:37:24.613  INFO 7952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.sma.P_SMA_Application.Hello()
+2017-11-20 11:37:24.613  INFO 7952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/likeName]}" onto public java.util.List<com.sma.entity.SysUser> com.sma.controller.SysUserController.getLikeName(java.lang.String)
+2017-11-20 11:37:24.613  INFO 7952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getById]}" onto public com.sma.entity.SysUser com.sma.controller.SysUserController.getById(long)
+2017-11-20 11:37:24.613  INFO 7952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/allSysUser]}" onto public java.util.List<com.sma.entity.SysUser> com.sma.controller.SysUserController.getAllSysUsers()
+2017-11-20 11:37:24.613  INFO 7952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getLoginNameById]}" onto public java.lang.String com.sma.controller.SysUserController.getLoginNameById(long)
+2017-11-20 11:37:24.629  INFO 7952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-20 11:37:24.629  INFO 7952 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-20 11:37:24.660  INFO 7952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-20 11:37:24.660  INFO 7952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-20 11:37:24.707  INFO 7952 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-20 11:37:25.190  INFO 7952 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-11-20 11:37:25.284  INFO 7952 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-11-20 11:37:25.284  INFO 7952 --- [main] com.sma.P_SMA_Application                : Started P_SMA_Application in 3.775 seconds (JVM running for 4.15)
+2017-11-20 11:37:31.056  INFO 7952 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-20 11:37:31.056  INFO 7952 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-20 11:37:31.071  INFO 7952 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-11-20 11:37:31.103  INFO 7952 --- [http-nio-8081-exec-1] com.sma.controller.SysUserController     : ~~Test getAllSysUsers~~

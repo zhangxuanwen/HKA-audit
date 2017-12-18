@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Thu Nov 30 17:09:52 CST 2017
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=false
+onejar.checkbox=true
+jarname=C\:\\Users\\Administrator\\Desktop\\HKA-Audit_fat.jar
+manifest.mergeall=true
+manifest.mainclass=com.sma.P_SMA_Application
+manifest.file=<createnew>
+jarname.isextern=true
+onejar.expand=
+excludes=
+includes=

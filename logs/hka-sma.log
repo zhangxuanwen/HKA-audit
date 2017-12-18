@@ -1,0 +1,10 @@
+2017-12-13 10:26:49,300 [main] INFO  com.sma.P_SMA_Application - Starting P_SMA_Application on PC201603011254 with PID 5944 (E:\workspace\HKA-Audit\target\classes started by Administrator in E:\workspace\HKA-Audit)
+2017-12-13 10:26:49,307 [main] INFO  com.sma.P_SMA_Application - No active profile set, falling back to default profiles: default
+2017-12-13 10:26:49,618 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2017-12-13 10:26:51,074 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2017-12-13 10:26:51,075 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-12-13 10:26:51,168 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-12-13 10:26:53,316 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2017-12-13 10:26:53,330 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2017-12-13 10:26:53,340 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-12-13 10:26:53,359 [main] INFO  com.sma.P_SMA_Application - Started P_SMA_Application in 4.55 seconds (JVM running for 4.852)

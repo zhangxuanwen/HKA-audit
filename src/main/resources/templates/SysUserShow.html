@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html xmlns:th="http://www.thymeleaf.org">
+		<head>
+			<meta charset="UTF-8"/>
+			<title>Test All SysUsers</title>
+		</head>
+		<body th:background="@{/image/bkimg.jpg}" width="100%" height="100%">
+			<h1 th:inline="text">TEST [[${title}]] !</h1>
+			<table>
+				<tr>
+					<th>ID</th>
+					<th>NAME</th>
+					<th>LOGIN_NAME</th>
+					<th>PASSWORD</th>
+				</tr>
+				<tr th:each="item:${results}">
+					<td th:text="${item.id}">1</td>
+					<td th:text="${item.name}">name</td>
+					<td th:test="${item.login_name}">login_name</td>
+					<td th:test="${item.password}">password</td>
+				</tr>
+			</table>
+			
+			<p>
+				<a href="" th:href="@{/}">Return to home</a>
+			</p>
+		</body>
+	</html>

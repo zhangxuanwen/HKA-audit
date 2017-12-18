@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sma.mapper.IPInterceptorMapper">
+ 	<select id="checkIsAllowed" parameterType="com.sma.dto.IPInterceptorDto" resultType="java.lang.String">
+		select isAllowed from sys_ip_config where ipAddr=#{ipAddr} and targetName=#{targetName};
+	</select>
+	
+	<insert id="insertRequestRecord" parameterType="com.sma.dto.IPInterceptorDto" useGeneratedKeys="true" keyProperty="id"> 
+        insert into sys_request_record(ipAddr,targetName,checkResult,requestTime) 
+        values(#{ipAddr},#{targetName},#{checkResult},#{requestTime}); 
+    </insert>
+    
+    <insert id="insertRequestParamsList" parameterType="java.util.List"> 
+        insert into sys_request_params(rrID,rparam,rvalue) 
+        values
+        <foreach collection="list" item="rp" index="index" separator=",">
+	        (
+	        	#{rp.rrID,jdbcType=BIGINT},#{rp.rparam,jdbcType=VARCHAR},#{rp.rvalue,jdbcType=VARCHAR}
+	        )
+        </foreach>  
+    </insert>
+    
+    <update id="updateDealTimeByRRID" parameterType="com.sma.dto.IPInterceptorDto">
+    	update sys_request_record set dealTime=#{dealTime} where id=#{id};
+    </update>
+</mapper>
